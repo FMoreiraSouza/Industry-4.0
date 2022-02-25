@@ -1,5 +1,7 @@
 # Industria 4.0
+É um conceito que encgloba as principais inovações tecnológicas de controle e automação, aplicada aos processos de manufatura, para aumentar a sua eficiência. Os dois principais paradigmas responsáveis na elaboração desse conceito são os Sistemas Ciber-Físicos e a Internet das Coisas. 
 
+# Descrição do projeto
 Este projeto tem como finalidade a coleta de dados, de onde estes são transferidos em rede por meio do Sistema de mensagem Apache Kafka para o ambiente de nuvem da *Amazon Web Services* (AWS), de onde esses serão preparados e analisados.
 
 # Requisitos de sistema
@@ -9,6 +11,8 @@ Este projeto tem como finalidade a coleta de dados, de onde estes são transferi
 - [MongoDB](https://www.mongodb.com/)
 - [Mongo Compass](https://www.mongodb.com/products/compass) *(Optional)*
 - [Matrikon OPC Explorer](https://www.matrikonopc.com/downloads/176/software/index.aspx)
+
+# Etapas de execução
 
 
 
