@@ -1,0 +1,6 @@
+﻿mongoengine
+python_dotenv
+singleton_decorator
+pymongo
+pandas
+pendulum

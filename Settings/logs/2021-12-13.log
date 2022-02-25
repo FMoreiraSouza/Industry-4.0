@@ -1,0 +1,35 @@
+2021-12-13 at 20:44:23 | ERROR | There was a problem migrating "raw_mill_simulation.yaml".
+2021-12-13 at 20:44:23 | ERROR | Traceback (most recent call last):
+  File "C:\Users\Felipe-NOT\Documents\TCC\2020_Forno_Inteligente_CapturaDados-feature-key-value\db-config\venv\lib\site-packages\mongoengine\document.py", line 398, in save
+    object_id = self._save_create(doc, force_insert, write_concern)
+  File "C:\Users\Felipe-NOT\Documents\TCC\2020_Forno_Inteligente_CapturaDados-feature-key-value\db-config\venv\lib\site-packages\mongoengine\document.py", line 463, in _save_create
+    object_id = wc_collection.insert_one(doc).inserted_id
+  File "C:\Users\Felipe-NOT\Documents\TCC\2020_Forno_Inteligente_CapturaDados-feature-key-value\db-config\venv\lib\site-packages\pymongo\collection.py", line 698, in insert_one
+    self._insert(document,
+  File "C:\Users\Felipe-NOT\Documents\TCC\2020_Forno_Inteligente_CapturaDados-feature-key-value\db-config\venv\lib\site-packages\pymongo\collection.py", line 613, in _insert
+    return self._insert_one(
+  File "C:\Users\Felipe-NOT\Documents\TCC\2020_Forno_Inteligente_CapturaDados-feature-key-value\db-config\venv\lib\site-packages\pymongo\collection.py", line 602, in _insert_one
+    self.__database.client._retryable_write(
+  File "C:\Users\Felipe-NOT\Documents\TCC\2020_Forno_Inteligente_CapturaDados-feature-key-value\db-config\venv\lib\site-packages\pymongo\mongo_client.py", line 1498, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "C:\Users\Felipe-NOT\Documents\TCC\2020_Forno_Inteligente_CapturaDados-feature-key-value\db-config\venv\lib\site-packages\pymongo\mongo_client.py", line 1384, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "C:\Users\Felipe-NOT\Documents\TCC\2020_Forno_Inteligente_CapturaDados-feature-key-value\db-config\venv\lib\site-packages\pymongo\mongo_client.py", line 1416, in _retry_internal
+    return func(session, sock_info, retryable)
+  File "C:\Users\Felipe-NOT\Documents\TCC\2020_Forno_Inteligente_CapturaDados-feature-key-value\db-config\venv\lib\site-packages\pymongo\collection.py", line 600, in _insert_command
+    _check_write_command_response(result)
+  File "C:\Users\Felipe-NOT\Documents\TCC\2020_Forno_Inteligente_CapturaDados-feature-key-value\db-config\venv\lib\site-packages\pymongo\helpers.py", line 226, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "C:\Users\Felipe-NOT\Documents\TCC\2020_Forno_Inteligente_CapturaDados-feature-key-value\db-config\venv\lib\site-packages\pymongo\helpers.py", line 207, in _raise_last_write_error
+    raise DuplicateKeyError(error.get("errmsg"), 11000, error)
+pymongo.errors.DuplicateKeyError: E11000 duplicate key error collection: pythia.tags index: server_1 dup key: { server: "Matrikon.OPC.Simulation.1" }, full error: {'index': 0, 'code': 11000, 'keyPattern': {'server': 1}, 'keyValue': {'server': 'Matrikon.OPC.Simulation.1'}, 'errmsg': 'E11000 duplicate key error collection: pythia.tags index: server_1 dup key: { server: "Matrikon.OPC.Simulation.1" }'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Felipe-NOT\Documents\TCC\2020_Forno_Inteligente_CapturaDados-feature-key-value\db-config\database\migrate.py", line 75, in migrate
+    tags_model(server=server, tags=tag_list).save()
+  File "C:\Users\Felipe-NOT\Documents\TCC\2020_Forno_Inteligente_CapturaDados-feature-key-value\db-config\venv\lib\site-packages\mongoengine\document.py", line 421, in save
+    raise NotUniqueError(message % err)
+mongoengine.errors.NotUniqueError: Tried to save duplicate unique keys (E11000 duplicate key error collection: pythia.tags index: server_1 dup key: { server: "Matrikon.OPC.Simulation.1" }, full error: {'index': 0, 'code': 11000, 'keyPattern': {'server': 1}, 'keyValue': {'server': 'Matrikon.OPC.Simulation.1'}, 'errmsg': 'E11000 duplicate key error collection: pythia.tags index: server_1 dup key: { server: "Matrikon.OPC.Simulation.1" }'})
+
