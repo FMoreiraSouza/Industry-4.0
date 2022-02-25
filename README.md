@@ -5,7 +5,7 @@ Este projeto tem como finalidade a coleta de dados, de onde estes são transferi
 # Requisitos de sistema
 - Windows 7/9/10
 - [Python 3.8.3](https://www.python.org/downloads/release/python-383/)
-- [Python 3.9]  (https://www.python.org/downloads/release/python-390/) (Para o *Simulated AI*)
+- [Python 3.9](https://www.python.org/downloads/release/python-390/) (Para o *Simulated AI*)
 - [MongoDB](https://www.mongodb.com/)
 - [Mongo Compass](https://www.mongodb.com/products/compass) *(Optional)*
 
