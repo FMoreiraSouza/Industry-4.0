@@ -8,7 +8,7 @@ Este projeto tem como finalidade a coleta de dados, de onde estes são transferi
 - [Python 3.9](https://www.python.org/downloads/release/python-390/) (Para o *Simulated AI*)
 - [MongoDB](https://www.mongodb.com/)
 - [Mongo Compass](https://www.mongodb.com/products/compass) *(Optional)*
-- Matrikon OPC Explorer(https://www.matrikonopc.com/downloads/176/software/index.aspx)
+- [Matrikon OPC Explorer](https://www.matrikonopc.com/downloads/176/software/index.aspx)
 
 
 
