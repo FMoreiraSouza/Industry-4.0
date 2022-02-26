@@ -15,7 +15,8 @@ Este projeto tem como finalidade a coleta de dados, de onde estes são transferi
 - [Mongo Compass](https://www.mongodb.com/products/compass) *(Optional)*
 - [Matrikon OPC Explorer](https://www.matrikonopc.com/downloads/176/software/index.aspx)
 
-# Etapas de execução
+# Execução
+https://youtu.be/aByq0g3Z4rA
 
 
 
