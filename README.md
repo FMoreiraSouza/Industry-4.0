@@ -1,5 +1,5 @@
 # Industria 4.0
-É um conceito que encgloba as principais inovações tecnológicas de controle e automação, aplicada aos processos de manufatura, para aumentar a sua eficiência. Os dois principais paradigmas responsáveis na elaboração desse conceito são os Sistemas Ciber-Físicos e a Internet das Coisas.
+É um conceito que engloba as principais inovações tecnológicas de controle e automação, aplicada aos processos de manufatura, para aumentar a sua eficiência. Os dois principais paradigmas responsáveis na elaboração desse conceito são os Sistemas Ciber-Físicos e a Internet das Coisas.
 
 ![Industry 4.0](https://github.com/Fmoreira12/Industry4.0/blob/master/Industry%204.0.png)
 
